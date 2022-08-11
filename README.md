@@ -1,4 +1,4 @@
-define('PROXY_DOMAIN', 'tecnome.vercel.com'); //change it to your proxy domain without http/s & slash (/) at the end!
+define('PROXY_DOMAIN', 'tecnome.vercel.app'); //change it to your proxy domain without http/s & slash (/) at the end!
 define('.COOKIE_DOMAIN.', PROXY_DOMAIN);
 define('.SITECOOKIEPATH.', '.');
 if(isset($_SERVER['HTTP_X_FORWARDED_FOR'])) $_SERVER['REMOTE_ADDR'] = explode(',',$_SERVER['HTTP_X_FORWARDED_FOR'])[0];
